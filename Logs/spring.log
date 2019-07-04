@@ -1,0 +1,594 @@
+2019-07-04 05:44:32.641  INFO 2888 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 2888 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:44:32.644  INFO 2888 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:44:33.233  INFO 2888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:44:33.279  INFO 2888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 1 repository interfaces.
+2019-07-04 05:44:33.528  INFO 2888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b2743a70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:44:33.699  INFO 2888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:44:33.715  INFO 2888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:44:33.716  INFO 2888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:44:33.776  INFO 2888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:44:33.776  INFO 2888 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1097 ms
+2019-07-04 05:44:33.875  INFO 2888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:44:33.935  INFO 2888 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:44:33.969  INFO 2888 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:44:34.080  INFO 2888 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:44:34.154  INFO 2888 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:44:34.228  INFO 2888 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:44:34.618  INFO 2888 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:44:34.619  INFO 2888 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:44:34.901  INFO 2888 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4ef18b7b-3d87-487e-b157-9ef57a31b7df
+
+2019-07-04 05:44:34.958  INFO 2888 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66e341e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b6fb197, org.springframework.security.web.header.HeaderWriterFilter@6b70d1fb, org.springframework.security.web.authentication.logout.LogoutFilter@5fb3111a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a2ae1ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@132e3594, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b48f0f4, org.springframework.security.web.session.SessionManagementFilter@130cfc47, org.springframework.security.web.access.ExceptionTranslationFilter@6075b369, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73e4387]
+2019-07-04 05:44:35.061  INFO 2888 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:44:35.084  WARN 2888 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:44:35.250  INFO 2888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:44:35.252  INFO 2888 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 2.871 seconds (JVM running for 3.304)
+2019-07-04 05:44:35.293  INFO 2888 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:44:35.294  INFO 2888 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:49:00.388  INFO 2888 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:49:00.389  INFO 2888 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:49:00.390  INFO 2888 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 05:49:00.395  INFO 2888 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 05:49:00.397  INFO 2888 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 05:49:03.111  INFO 3046 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3046 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:49:03.115  INFO 3046 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:49:03.753  INFO 3046 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:49:03.804  INFO 3046 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 repository interfaces.
+2019-07-04 05:49:04.092  INFO 3046 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70938472] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:49:04.273  INFO 3046 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:49:04.290  INFO 3046 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:49:04.290  INFO 3046 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:49:04.365  INFO 3046 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:49:04.366  INFO 3046 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1223 ms
+2019-07-04 05:49:04.477  INFO 3046 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:49:04.548  INFO 3046 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:49:04.590  INFO 3046 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:49:04.712  INFO 3046 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:49:04.799  INFO 3046 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:49:04.903  INFO 3046 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:49:05.285  INFO 3046 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:49:05.287  INFO 3046 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:49:05.571  INFO 3046 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e41a9c62-0490-44ce-95cc-6e525844a35b
+
+2019-07-04 05:49:05.633  INFO 3046 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@212fafd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@8641b7d, org.springframework.security.web.header.HeaderWriterFilter@42c12b3e, org.springframework.security.web.authentication.logout.LogoutFilter@63e5b8aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fb450d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bd8f7db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@448462f0, org.springframework.security.web.session.SessionManagementFilter@34279b8a, org.springframework.security.web.access.ExceptionTranslationFilter@51e7589f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@130cfc47]
+2019-07-04 05:49:05.747  INFO 3046 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:49:05.772  WARN 3046 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:49:05.964  INFO 3046 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:49:05.967  INFO 3046 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.127 seconds (JVM running for 3.552)
+2019-07-04 05:49:55.598  INFO 3046 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:49:55.599  INFO 3046 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:49:55.600  INFO 3046 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 05:49:55.605  INFO 3046 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 05:49:55.607  INFO 3046 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 05:49:57.831  INFO 3051 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3051 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:49:57.834  INFO 3051 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:49:58.445  INFO 3051 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:49:58.504  INFO 3051 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 1 repository interfaces.
+2019-07-04 05:49:58.810  INFO 3051 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$722b557] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:49:59.013  INFO 3051 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:49:59.034  INFO 3051 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:49:59.034  INFO 3051 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:49:59.114  INFO 3051 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:49:59.115  INFO 3051 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1248 ms
+2019-07-04 05:49:59.241  INFO 3051 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:49:59.313  INFO 3051 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:49:59.351  INFO 3051 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:49:59.476  INFO 3051 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:49:59.559  INFO 3051 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:49:59.639  INFO 3051 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:50:00.024  INFO 3051 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:50:00.026  INFO 3051 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:50:00.302  INFO 3051 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a7a318dc-cb70-49c4-9abd-8bc4b8cad26a
+
+2019-07-04 05:50:00.362  INFO 3051 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4137aab0, org.springframework.security.web.context.SecurityContextPersistenceFilter@55877274, org.springframework.security.web.header.HeaderWriterFilter@7ac48e10, org.springframework.security.web.authentication.logout.LogoutFilter@3a4a5f3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d4a82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bec068b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1df9186f, org.springframework.security.web.session.SessionManagementFilter@7da1e005, org.springframework.security.web.access.ExceptionTranslationFilter@476fde05, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75e80a97]
+2019-07-04 05:50:00.475  INFO 3051 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:50:00.500  WARN 3051 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:50:00.686  INFO 3051 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:50:00.688  INFO 3051 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.122 seconds (JVM running for 3.529)
+2019-07-04 05:50:08.717  INFO 3051 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:50:08.717  INFO 3051 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:50:08.718  INFO 3051 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 05:50:08.722  INFO 3051 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 05:50:08.725  INFO 3051 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 05:50:10.735  INFO 3056 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3056 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:50:10.738  INFO 3056 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:50:11.381  INFO 3056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:50:11.437  INFO 3056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 1 repository interfaces.
+2019-07-04 05:50:11.690  INFO 3056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5d38628] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:50:11.850  INFO 3056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:50:11.865  INFO 3056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:50:11.865  INFO 3056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:50:11.931  INFO 3056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:50:11.932  INFO 3056 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1158 ms
+2019-07-04 05:50:12.034  INFO 3056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:50:12.098  INFO 3056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:50:12.135  INFO 3056 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:50:12.249  INFO 3056 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:50:12.325  INFO 3056 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:50:12.401  INFO 3056 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:50:12.771  INFO 3056 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:50:12.773  INFO 3056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:50:13.044  INFO 3056 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9804fbee-845d-46c6-a126-9c74a86a76b3
+
+2019-07-04 05:50:13.105  INFO 3056 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19b5214b, org.springframework.security.web.context.SecurityContextPersistenceFilter@53d6e959, org.springframework.security.web.header.HeaderWriterFilter@636985df, org.springframework.security.web.authentication.logout.LogoutFilter@6b0f266e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69a40b3c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4270b142, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fb3111a, org.springframework.security.web.session.SessionManagementFilter@49a38b1, org.springframework.security.web.access.ExceptionTranslationFilter@3fb450d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c5d3a37]
+2019-07-04 05:50:13.216  INFO 3056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:50:13.242  WARN 3056 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:50:13.428  INFO 3056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:50:13.430  INFO 3056 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 2.962 seconds (JVM running for 3.362)
+2019-07-04 05:50:26.505  INFO 3056 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:50:26.505  INFO 3056 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:50:26.506  INFO 3056 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 05:50:26.510  INFO 3056 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 05:50:26.513  INFO 3056 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 05:50:28.679  INFO 3061 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3061 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:50:28.682  INFO 3061 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:50:29.363  INFO 3061 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:50:29.419  INFO 3061 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 1 repository interfaces.
+2019-07-04 05:50:29.679  INFO 3061 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75920a57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:50:29.840  INFO 3061 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:50:29.857  INFO 3061 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:50:29.857  INFO 3061 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:50:29.924  INFO 3061 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:50:29.924  INFO 3061 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1203 ms
+2019-07-04 05:50:30.027  INFO 3061 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:50:30.090  INFO 3061 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:50:30.125  INFO 3061 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:50:30.240  INFO 3061 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:50:30.316  INFO 3061 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:50:30.392  INFO 3061 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:50:30.764  INFO 3061 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:50:30.766  INFO 3061 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:50:31.080  INFO 3061 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e77fe20b-d81b-4607-b5c8-7325f4825e44
+
+2019-07-04 05:50:31.141  INFO 3061 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bb8e6fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@14f060b8, org.springframework.security.web.header.HeaderWriterFilter@342ee097, org.springframework.security.web.authentication.logout.LogoutFilter@6c835217, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79df80a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@581c9bb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2726a511, org.springframework.security.web.session.SessionManagementFilter@723e2d08, org.springframework.security.web.access.ExceptionTranslationFilter@52354202, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d1bdd4a]
+2019-07-04 05:50:31.259  INFO 3061 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:50:31.284  WARN 3061 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:50:31.479  INFO 3061 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:50:31.482  INFO 3061 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.082 seconds (JVM running for 3.487)
+2019-07-04 05:50:31.520  INFO 3061 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:50:31.521  INFO 3061 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:53:20.110  INFO 3061 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:53:20.111  INFO 3061 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:53:20.111  INFO 3061 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 05:53:20.116  INFO 3061 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 05:53:20.119  INFO 3061 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 05:53:40.288  INFO 3075 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3075 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:53:40.292  INFO 3075 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:53:40.858  INFO 3075 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:53:40.904  INFO 3075 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 1 repository interfaces.
+2019-07-04 05:53:41.158  INFO 3075 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f8e1a08] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:53:41.342  INFO 3075 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:53:41.360  INFO 3075 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:53:41.360  INFO 3075 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:53:41.431  INFO 3075 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:53:41.432  INFO 3075 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1107 ms
+2019-07-04 05:53:41.554  INFO 3075 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:53:41.622  INFO 3075 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:53:41.664  INFO 3075 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:53:41.782  INFO 3075 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:53:41.871  INFO 3075 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:53:41.966  INFO 3075 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:53:42.414  INFO 3075 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:53:42.415  INFO 3075 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:53:42.689  INFO 3075 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 91962091-00c7-4aac-beb8-f6f2c10d71d0
+
+2019-07-04 05:53:42.741  INFO 3075 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5eb87338, org.springframework.security.web.context.SecurityContextPersistenceFilter@70881123, org.springframework.security.web.header.HeaderWriterFilter@2801827a, org.springframework.security.web.authentication.logout.LogoutFilter@231cdda8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e905f2c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2506b881, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b999ee8, org.springframework.security.web.session.SessionManagementFilter@53314f76, org.springframework.security.web.access.ExceptionTranslationFilter@10b8b900, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d37ee0c]
+2019-07-04 05:53:42.855  INFO 3075 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:53:42.883  WARN 3075 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:53:43.068  INFO 3075 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:53:43.074  INFO 3075 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.039 seconds (JVM running for 3.456)
+2019-07-04 05:53:43.112  WARN 3075 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:53:43.114 ERROR 3075 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:55:01.001  INFO 3075 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 05:55:01.002  INFO 3075 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 05:55:01.008  INFO 3075 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-04 05:55:01.109  WARN 3075 --- [http-nio-9999-exec-2] c.s.Controller.BookController            : Getting all books
+2019-07-04 05:55:52.500  INFO 3075 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:55:52.501  INFO 3075 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:55:52.501  INFO 3075 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 05:55:52.506  INFO 3075 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 05:55:52.508  INFO 3075 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 05:55:55.911  INFO 3083 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3083 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:55:55.914  INFO 3083 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:55:56.559  INFO 3083 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:55:56.624  INFO 3083 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 1 repository interfaces.
+2019-07-04 05:55:56.926  INFO 3083 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a61c658e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:55:57.111  INFO 3083 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:55:57.132  INFO 3083 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:55:57.132  INFO 3083 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:55:57.206  INFO 3083 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:55:57.206  INFO 3083 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1257 ms
+2019-07-04 05:55:57.322  INFO 3083 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:55:57.388  INFO 3083 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:55:57.423  INFO 3083 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:55:57.535  INFO 3083 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:55:57.612  INFO 3083 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:55:57.683  INFO 3083 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:55:58.062  INFO 3083 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:55:58.064  INFO 3083 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:55:58.340  INFO 3083 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 506e2992-137a-4d03-95f0-a718955baac9
+
+2019-07-04 05:55:58.402  INFO 3083 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a914089, org.springframework.security.web.context.SecurityContextPersistenceFilter@3815146b, org.springframework.security.web.header.HeaderWriterFilter@285a4fe3, org.springframework.security.web.authentication.logout.LogoutFilter@65cc5252, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27a9f025, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@508ad266, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43d76a92, org.springframework.security.web.session.SessionManagementFilter@16cb9989, org.springframework.security.web.access.ExceptionTranslationFilter@50ec4bfc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4837f97e]
+2019-07-04 05:55:58.517  INFO 3083 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:55:58.542  WARN 3083 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:55:58.732  INFO 3083 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:55:58.735  INFO 3083 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.082 seconds (JVM running for 3.478)
+2019-07-04 05:55:58.774  WARN 3083 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:55:58.775 ERROR 3083 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:56:06.265  INFO 3083 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 05:56:06.267  INFO 3083 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 05:56:06.274  INFO 3083 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-04 05:56:06.389  INFO 3083 --- [http-nio-9999-exec-2] c.s.Controller.BookController            : Getting all books
+2019-07-04 05:56:33.223  INFO 3083 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:56:33.224  INFO 3083 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:56:33.224  INFO 3083 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 05:56:33.230  INFO 3083 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 05:56:33.232  INFO 3083 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 05:56:37.733  INFO 3092 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3092 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 05:56:37.736  INFO 3092 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 05:56:38.355  INFO 3092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 05:56:38.429  INFO 3092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 1 repository interfaces.
+2019-07-04 05:56:38.808  INFO 3092 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ea4e3ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 05:56:39.009  INFO 3092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 05:56:39.027  INFO 3092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 05:56:39.027  INFO 3092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 05:56:39.094  INFO 3092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 05:56:39.094  INFO 3092 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1324 ms
+2019-07-04 05:56:39.218  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 05:56:39.302  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 05:56:39.415  INFO 3092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 05:56:39.466  INFO 3092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 05:56:39.584  INFO 3092 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 05:56:39.701  INFO 3092 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 05:56:40.293  INFO 3092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 05:56:40.295  INFO 3092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 05:56:40.687  INFO 3092 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3ed1bf8a-4875-4780-869d-2591acd8ff98
+
+2019-07-04 05:56:40.760  INFO 3092 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35ff072c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3749c2b, org.springframework.security.web.header.HeaderWriterFilter@3df3410a, org.springframework.security.web.authentication.logout.LogoutFilter@7793b55d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64d93096, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@672d8370, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c0004b7, org.springframework.security.web.session.SessionManagementFilter@7d156f8f, org.springframework.security.web.access.ExceptionTranslationFilter@2a259f6f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13714753]
+2019-07-04 05:56:40.901  INFO 3092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 05:56:40.934  WARN 3092 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 05:56:41.121  INFO 3092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 05:56:41.124  INFO 3092 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.746 seconds (JVM running for 4.744)
+2019-07-04 05:56:41.169  WARN 3092 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:56:41.170 ERROR 3092 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:56:44.523  INFO 3092 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 05:56:44.523  INFO 3092 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 05:56:44.529  INFO 3092 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-04 06:00:18.016  WARN 3092 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m38s614ms).
+2019-07-04 06:00:18.016  INFO 3092 --- [http-nio-9999-exec-2] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:00:18.099  INFO 3092 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:00:18.100  INFO 3092 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:00:18.101  INFO 3092 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:00:18.103  WARN 3092 --- [Thread-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2019-07-04 06:00:18.104 ERROR 3092 --- [Thread-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-07-04 06:00:18.106  WARN 3092 --- [Thread-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2019-07-04 06:00:18.106 ERROR 3092 --- [Thread-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-07-04 06:00:18.106  INFO 3092 --- [Thread-4] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2019-07-04 06:00:18.107  INFO 3092 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:00:18.109  INFO 3092 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:00:21.797  INFO 3105 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3105 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:00:21.800  INFO 3105 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:00:22.398  INFO 3105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:00:22.452  INFO 3105 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 1 repository interfaces.
+2019-07-04 06:00:22.730  INFO 3105 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8637b590] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:00:22.916  INFO 3105 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:00:22.934  INFO 3105 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:00:22.935  INFO 3105 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:00:23.005  INFO 3105 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:00:23.006  INFO 3105 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1174 ms
+2019-07-04 06:00:23.119  INFO 3105 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:00:23.191  INFO 3105 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:00:23.231  INFO 3105 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:00:23.354  INFO 3105 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:00:23.444  INFO 3105 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:00:23.534  INFO 3105 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:00:23.936  INFO 3105 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:00:23.937  INFO 3105 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:00:24.224  INFO 3105 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 36a6e38e-19a1-4e07-88a5-5572acaf2692
+
+2019-07-04 06:00:24.287  INFO 3105 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f664bee, org.springframework.security.web.context.SecurityContextPersistenceFilter@740b9a50, org.springframework.security.web.header.HeaderWriterFilter@fddd7ae, org.springframework.security.web.authentication.logout.LogoutFilter@5a2ae1ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5111de7c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b70d1fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76563ae7, org.springframework.security.web.session.SessionManagementFilter@486bd064, org.springframework.security.web.access.ExceptionTranslationFilter@703fa45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3487442d]
+2019-07-04 06:00:24.402  INFO 3105 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:00:24.429  WARN 3105 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:00:24.639  INFO 3105 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:00:24.642  INFO 3105 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.12 seconds (JVM running for 3.591)
+2019-07-04 06:00:24.681  WARN 3105 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:00:24.682 ERROR 3105 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:00:26.965  INFO 3105 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:00:26.965  INFO 3105 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:00:26.971  INFO 3105 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-04 06:00:27.071  INFO 3105 --- [http-nio-9999-exec-1] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:01:48.960  INFO 3105 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:01:48.961  INFO 3105 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:01:48.961  INFO 3105 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:01:48.966  INFO 3105 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:01:48.969  INFO 3105 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:01:52.612  INFO 3113 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3113 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:01:52.614  INFO 3113 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:01:53.202  INFO 3113 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:01:53.249  INFO 3113 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-07-04 06:01:53.489  INFO 3113 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b9e64e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:01:53.649  INFO 3113 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:01:53.665  INFO 3113 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:01:53.665  INFO 3113 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:01:53.729  INFO 3113 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:01:53.729  INFO 3113 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1081 ms
+2019-07-04 06:01:53.830  INFO 3113 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:01:53.893  INFO 3113 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:01:53.928  INFO 3113 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:01:54.042  INFO 3113 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:01:54.115  INFO 3113 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:01:54.186  INFO 3113 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:01:54.561  INFO 3113 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:01:54.563  INFO 3113 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:01:54.838  INFO 3113 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: fa2106cd-ecf8-42df-b956-d3849f1b5ef5
+
+2019-07-04 06:01:54.899  INFO 3113 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26da1ba2, org.springframework.security.web.context.SecurityContextPersistenceFilter@45554613, org.springframework.security.web.header.HeaderWriterFilter@6d7ad0f5, org.springframework.security.web.authentication.logout.LogoutFilter@3f6cce7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c9306d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@599f1b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3820cfe, org.springframework.security.web.session.SessionManagementFilter@64656b9e, org.springframework.security.web.access.ExceptionTranslationFilter@3e6ec74, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51888019]
+2019-07-04 06:01:55.014  INFO 3113 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:01:55.039  WARN 3113 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:01:55.223  INFO 3113 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:01:55.225  INFO 3113 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 2.865 seconds (JVM running for 3.26)
+2019-07-04 06:01:55.264  WARN 3113 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:01:55.265 ERROR 3113 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:01:58.774  INFO 3113 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:01:58.775  INFO 3113 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:01:58.780  INFO 3113 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-04 06:01:58.883  INFO 3113 --- [http-nio-9999-exec-2] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:05:45.360  INFO 3113 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:05:45.361  INFO 3113 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:05:45.362  INFO 3113 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:05:45.366  INFO 3113 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:05:45.369  INFO 3113 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:05:49.005  INFO 3132 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3132 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:05:49.009  INFO 3132 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:05:49.606  INFO 3132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:05:49.662  INFO 3132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 1 repository interfaces.
+2019-07-04 06:05:49.939  INFO 3132 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac306c5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:05:50.116  INFO 3132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:05:50.134  INFO 3132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:05:50.134  INFO 3132 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:05:50.205  INFO 3132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:05:50.205  INFO 3132 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1164 ms
+2019-07-04 06:05:50.313  INFO 3132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:05:50.377  INFO 3132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:05:50.413  INFO 3132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:05:50.526  INFO 3132 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:05:50.602  INFO 3132 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:05:50.677  INFO 3132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:05:51.055  INFO 3132 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:05:51.056  INFO 3132 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:05:51.360  INFO 3132 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7719fa84-45ce-4dab-8738-7c35e707bfe2
+
+2019-07-04 06:05:51.438  INFO 3132 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34edd065, org.springframework.security.web.context.SecurityContextPersistenceFilter@4602f874, org.springframework.security.web.header.HeaderWriterFilter@3820cfe, org.springframework.security.web.authentication.logout.LogoutFilter@4fea840f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@353c6da1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29bbc391, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@681e913c, org.springframework.security.web.session.SessionManagementFilter@7d37ee0c, org.springframework.security.web.access.ExceptionTranslationFilter@231b35fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@539c4830]
+2019-07-04 06:05:51.572  INFO 3132 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:05:51.603  WARN 3132 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:05:51.819  INFO 3132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:05:51.822  INFO 3132 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.081 seconds (JVM running for 3.507)
+2019-07-04 06:05:51.866  WARN 3132 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:05:51.868 ERROR 3132 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:06:02.101  INFO 3132 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:06:02.102  INFO 3132 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:06:02.107  INFO 3132 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-04 06:06:02.211  INFO 3132 --- [http-nio-9999-exec-2] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:06:08.442  INFO 3132 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:06:08.443  INFO 3132 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:06:08.444  INFO 3132 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:06:08.448  INFO 3132 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:06:08.451  INFO 3132 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:06:10.663  INFO 3138 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3138 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:06:10.667  INFO 3138 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:06:11.301  INFO 3138 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:06:11.355  INFO 3138 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 1 repository interfaces.
+2019-07-04 06:06:11.635  INFO 3138 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75920a57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:06:11.849  INFO 3138 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:06:11.870  INFO 3138 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:06:11.870  INFO 3138 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:06:11.953  INFO 3138 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:06:11.953  INFO 3138 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1252 ms
+2019-07-04 06:06:12.083  INFO 3138 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:06:12.160  INFO 3138 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:06:12.199  INFO 3138 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:06:12.324  INFO 3138 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:06:12.404  INFO 3138 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:06:12.483  INFO 3138 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:06:12.885  INFO 3138 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:06:12.887  INFO 3138 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:06:13.185  INFO 3138 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4bd3ad76-d6a6-4b3e-a308-e3ef57f1dc99
+
+2019-07-04 06:06:13.250  INFO 3138 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bb8e6fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@14f060b8, org.springframework.security.web.header.HeaderWriterFilter@342ee097, org.springframework.security.web.authentication.logout.LogoutFilter@6c835217, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79df80a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@581c9bb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2726a511, org.springframework.security.web.session.SessionManagementFilter@723e2d08, org.springframework.security.web.access.ExceptionTranslationFilter@52354202, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d1bdd4a]
+2019-07-04 06:06:13.370  INFO 3138 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:06:13.399  WARN 3138 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:06:13.590  INFO 3138 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:06:13.592  INFO 3138 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.199 seconds (JVM running for 3.604)
+2019-07-04 06:06:13.631  WARN 3138 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:06:13.633 ERROR 3138 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:06:18.988  INFO 3138 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:06:18.989  INFO 3138 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:06:18.994  INFO 3138 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-04 06:06:19.095  INFO 3138 --- [http-nio-9999-exec-2] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:06:23.373  INFO 3138 --- [http-nio-9999-exec-3] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:06:24.359  INFO 3138 --- [http-nio-9999-exec-4] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:06:25.155  INFO 3138 --- [http-nio-9999-exec-5] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:06:27.091  INFO 3138 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:06:27.092  INFO 3138 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:06:27.093  INFO 3138 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:06:27.097  INFO 3138 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:06:27.099  INFO 3138 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:06:29.035  INFO 3141 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3141 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:06:29.041  INFO 3141 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:06:29.724  INFO 3141 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:06:29.787  INFO 3141 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 1 repository interfaces.
+2019-07-04 06:06:30.176  INFO 3141 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$48940d6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:06:30.383  INFO 3141 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:06:30.403  INFO 3141 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:06:30.403  INFO 3141 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:06:30.477  INFO 3141 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:06:30.477  INFO 3141 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1371 ms
+2019-07-04 06:06:30.598  INFO 3141 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:06:30.680  INFO 3141 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:06:30.802  INFO 3141 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:06:30.852  INFO 3141 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:06:30.962  INFO 3141 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:06:31.072  INFO 3141 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:06:31.593  INFO 3141 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:06:31.595  INFO 3141 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:06:31.906  INFO 3141 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6c0d095f-781f-464e-b38f-f887ee097a80
+
+2019-07-04 06:06:31.972  INFO 3141 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2210e466, org.springframework.security.web.context.SecurityContextPersistenceFilter@70840a5a, org.springframework.security.web.header.HeaderWriterFilter@85cd413, org.springframework.security.web.authentication.logout.LogoutFilter@5366575d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a34c1f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72c704f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@be1c08a, org.springframework.security.web.session.SessionManagementFilter@651caa2e, org.springframework.security.web.access.ExceptionTranslationFilter@14ca88bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11978f52]
+2019-07-04 06:06:32.087  INFO 3141 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:06:32.115  WARN 3141 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:06:32.308  INFO 3141 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:06:32.310  INFO 3141 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.739 seconds (JVM running for 4.548)
+2019-07-04 06:06:32.357  WARN 3141 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:06:32.359 ERROR 3141 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:06:34.244  INFO 3141 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:06:34.244  INFO 3141 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:06:34.252  INFO 3141 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-07-04 06:07:39.531  WARN 3141 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s737ms).
+2019-07-04 06:07:39.531  INFO 3141 --- [http-nio-9999-exec-1] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:07:39.579  INFO 3141 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:07:39.580  INFO 3141 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:07:39.580  INFO 3141 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:07:39.586  INFO 3141 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:07:39.589  INFO 3141 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:07:43.362  INFO 3147 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3147 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:07:43.366  INFO 3147 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:07:44.009  INFO 3147 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:07:44.061  INFO 3147 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 1 repository interfaces.
+2019-07-04 06:07:44.357  INFO 3147 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ef21c88e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:07:44.533  INFO 3147 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:07:44.550  INFO 3147 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:07:44.550  INFO 3147 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:07:44.617  INFO 3147 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:07:44.618  INFO 3147 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1204 ms
+2019-07-04 06:07:44.734  INFO 3147 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:07:44.813  INFO 3147 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:07:44.922  INFO 3147 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:07:44.967  INFO 3147 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:07:45.065  INFO 3147 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:07:45.159  INFO 3147 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:07:45.652  INFO 3147 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:07:45.654  INFO 3147 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:07:45.958  INFO 3147 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 54bfda41-d9ef-446b-ae02-797fae933c51
+
+2019-07-04 06:07:46.022  INFO 3147 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@924f3f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fbbdd8a, org.springframework.security.web.header.HeaderWriterFilter@1c610f, org.springframework.security.web.authentication.logout.LogoutFilter@416b681c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79ec57b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@409395b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19e2db7c, org.springframework.security.web.session.SessionManagementFilter@586486c, org.springframework.security.web.access.ExceptionTranslationFilter@5e7e7a7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@614d7fbf]
+2019-07-04 06:07:46.141  INFO 3147 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:07:46.169  WARN 3147 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:07:46.360  INFO 3147 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:07:46.362  INFO 3147 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.368 seconds (JVM running for 3.947)
+2019-07-04 06:07:46.430  WARN 3147 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:07:46.432 ERROR 3147 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:07:49.953  INFO 3147 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:07:49.953  INFO 3147 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:07:49.959  INFO 3147 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-07-04 06:08:31.672  INFO 3147 --- [http-nio-9999-exec-1] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:08:52.134  INFO 3147 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:08:52.134  INFO 3147 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:08:52.135  INFO 3147 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:08:52.140  INFO 3147 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:08:52.143  INFO 3147 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:08:54.463  INFO 3153 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3153 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:08:54.467  INFO 3153 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:08:55.084  INFO 3153 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:08:55.132  INFO 3153 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 1 repository interfaces.
+2019-07-04 06:08:55.383  INFO 3153 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c54788c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:08:55.546  INFO 3153 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:08:55.563  INFO 3153 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:08:55.563  INFO 3153 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:08:55.628  INFO 3153 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:08:55.628  INFO 3153 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1126 ms
+2019-07-04 06:08:55.730  INFO 3153 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:08:55.793  INFO 3153 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:08:55.829  INFO 3153 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:08:55.944  INFO 3153 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:08:56.020  INFO 3153 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:08:56.098  INFO 3153 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:08:56.508  INFO 3153 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:08:56.510  INFO 3153 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:08:56.828  INFO 3153 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8af4c984-503b-4d30-bb9d-d09dfd45067f
+
+2019-07-04 06:08:56.897  INFO 3153 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c4ce583, org.springframework.security.web.context.SecurityContextPersistenceFilter@21b51e59, org.springframework.security.web.header.HeaderWriterFilter@b022551, org.springframework.security.web.authentication.logout.LogoutFilter@686cf8ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b4a4e40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b8aaeab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@755b5f30, org.springframework.security.web.session.SessionManagementFilter@43c7fe8a, org.springframework.security.web.access.ExceptionTranslationFilter@6750e381, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c48b543]
+2019-07-04 06:08:57.032  INFO 3153 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:08:57.064  WARN 3153 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:08:57.277  INFO 3153 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:08:57.280  INFO 3153 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.084 seconds (JVM running for 3.498)
+2019-07-04 06:08:57.322  WARN 3153 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:08:57.323 ERROR 3153 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:09:04.896  INFO 3153 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:09:04.906  INFO 3153 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:09:04.914  INFO 3153 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-07-04 06:09:05.025  INFO 3153 --- [http-nio-9999-exec-1] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:09:44.654  INFO 3153 --- [http-nio-9999-exec-3] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:09:45.831  INFO 3153 --- [http-nio-9999-exec-4] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:10:11.409  INFO 3153 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:10:11.410  INFO 3153 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:10:11.411  INFO 3153 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:10:11.416  INFO 3153 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:10:11.419  INFO 3153 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-07-04 06:10:14.991  INFO 3160 --- [main] c.stackdriverpoc.StackdriverApplication  : Starting StackdriverApplication on tibotelho-mbp with PID 3160 (/Users/tbotelho/Documents/Source/Masonite/StackDriverLogger/target/classes started by tbotelho in /Users/tbotelho/Documents/Source/Masonite/StackDriverLogger)
+2019-07-04 06:10:14.994  INFO 3160 --- [main] c.stackdriverpoc.StackdriverApplication  : No active profile set, falling back to default profiles: default
+2019-07-04 06:10:15.581  INFO 3160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-07-04 06:10:15.631  INFO 3160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 1 repository interfaces.
+2019-07-04 06:10:15.880  INFO 3160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ebe87ac8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-07-04 06:10:16.048  INFO 3160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2019-07-04 06:10:16.063  INFO 3160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-04 06:10:16.064  INFO 3160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-07-04 06:10:16.125  INFO 3160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-04 06:10:16.125  INFO 3160 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1096 ms
+2019-07-04 06:10:16.230  INFO 3160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-04 06:10:16.292  INFO 3160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-04 06:10:16.328  INFO 3160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-07-04 06:10:16.440  INFO 3160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.2.Final}
+2019-07-04 06:10:16.517  INFO 3160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-07-04 06:10:16.594  INFO 3160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-07-04 06:10:16.976  INFO 3160 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-07-04 06:10:16.978  INFO 3160 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:10:17.233  INFO 3160 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7a1c677d-eefc-426d-97bd-c66f251d657e
+
+2019-07-04 06:10:17.286  INFO 3160 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@93bf0e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@787988f4, org.springframework.security.web.header.HeaderWriterFilter@130cfc47, org.springframework.security.web.authentication.logout.LogoutFilter@5ec9eefa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f235107, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4584304, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4981d95b, org.springframework.security.web.session.SessionManagementFilter@212fafd1, org.springframework.security.web.access.ExceptionTranslationFilter@7a0ab480, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66e341e9]
+2019-07-04 06:10:17.387  INFO 3160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:10:17.410  WARN 3160 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-04 06:10:17.577  INFO 3160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
+2019-07-04 06:10:17.579  INFO 3160 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 2.849 seconds (JVM running for 3.252)
+2019-07-04 06:10:17.617  WARN 3160 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:10:17.618 ERROR 3160 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:10:20.522  INFO 3160 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-07-04 06:10:20.522  INFO 3160 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-07-04 06:10:20.527  INFO 3160 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-07-04 06:10:20.625  INFO 3160 --- [http-nio-9999-exec-2] c.s.Controller.BookController            : Getting all books
+2019-07-04 06:13:47.408  INFO 3160 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-04 06:13:47.409  INFO 3160 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-07-04 06:13:47.409  INFO 3160 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-07-04 06:13:47.414  INFO 3160 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-04 06:13:47.417  INFO 3160 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

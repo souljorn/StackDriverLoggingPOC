@@ -1,11 +1,23 @@
-package com.stackdriverpoc;
+package com.stackdriverpoc.Controller;
 
+import com.stackdriverpoc.Book;
+import com.stackdriverpoc.BookNotFoundException;
+import com.stackdriverpoc.BookRepo;
+import com.stackdriverpoc.Controller.Aspect.LogExecutionTime;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
 
 @RestController
-class BookController {
+public class BookController {
+    private String name;
+    private String url;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(BookController.class);
 
     private final BookRepo repository;
 
@@ -13,11 +25,15 @@ class BookController {
         this.repository = repository;
     }
 
-    // Aggregate root
 
+    @LogExecutionTime
     @GetMapping("/books")
     List<Book> all() {
-        return repository.findAll();
+        List<Book> temp = repository.findAll();
+        List<String> collect = temp.stream().map(x -> x.getAuthor()).collect(Collectors.toList());
+        String str = collect.stream().map(x -> String.valueOf(x)).collect(Collectors.joining("---", "|", "|"));
+        LOGGER.info("Getting all books " + str);
+        return temp;
     }
 
     @PostMapping("/books")
