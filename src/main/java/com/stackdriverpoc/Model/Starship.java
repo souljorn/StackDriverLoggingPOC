@@ -1,12 +1,12 @@
 package com.stackdriverpoc.Model;
 
 import lombok.Data;
-
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Data
 @Entity
-public class Starship {
+public class Starship implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,16 +16,13 @@ public class Starship {
     private String name;
 
     @Column(nullable = false)
+    private String model;
+
+    @Column(nullable = false)
     private String manufacturer;
 
     @Column(nullable = false)
-    private String costInCredits;
-
-    @Column(nullable = false)
     private String length;
-
-    @Column(nullable = false)
-    private String maxAtomspheringSpeed;
 
     @Column(nullable = false)
     private String crew;
@@ -34,13 +31,19 @@ public class Starship {
     private String passengers;
 
     @Column(nullable = false)
-    private String cargoCapacity;
-
-    @Column(nullable = false)
-    private String consumables;
-
-    @Column(nullable = false)
     private String hyperdriveRating;
 
-
+    @Override
+    public String toString() {
+        return String.format("Starship{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
+                ", length='" + length + '\'' +
+                ", crew='" + crew + '\'' +
+                ", passengers='" + passengers + '\'' +
+                ", hyperdriveRating='" + hyperdriveRating + '\'' +
+                '}');
+    }
 }

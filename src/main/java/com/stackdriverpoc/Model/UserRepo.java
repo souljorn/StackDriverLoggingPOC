@@ -2,5 +2,8 @@ package com.stackdriverpoc.Model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface BookRepo extends JpaRepository<Book, Long> {
+
+public interface UserRepo extends JpaRepository<User, Long> {
+
+    User findByEmail(String email);
 }
