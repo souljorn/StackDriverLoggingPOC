@@ -1,9 +1,9 @@
 package com.stackdriverpoc.Controller;
 
-import com.stackdriverpoc.Book;
-import com.stackdriverpoc.BookNotFoundException;
-import com.stackdriverpoc.BookRepo;
-import com.stackdriverpoc.Controller.Aspect.LogExecutionTime;
+import com.stackdriverpoc.Model.Book;
+import com.stackdriverpoc.ErrorHandling.BookNotFoundException;
+import com.stackdriverpoc.Model.BookRepo;
+import com.stackdriverpoc.Aspect.LogExecutionTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

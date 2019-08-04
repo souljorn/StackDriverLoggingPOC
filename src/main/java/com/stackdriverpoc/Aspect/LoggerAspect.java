@@ -1,4 +1,4 @@
-package com.stackdriverpoc.Controller.Aspect;
+package com.stackdriverpoc.Aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

@@ -1,4 +1,4 @@
-package com.stackdriverpoc;
+package com.stackdriverpoc.Model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

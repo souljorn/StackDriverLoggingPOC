@@ -1,5 +1,7 @@
-package com.stackdriverpoc;
+package com.stackdriverpoc.Database;
 
+import com.stackdriverpoc.Model.Book;
+import com.stackdriverpoc.Model.BookRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

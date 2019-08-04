@@ -1,4 +1,4 @@
-package com.stackdriverpoc;
+package com.stackdriverpoc.Model;
 import lombok.Data;
 import javax.persistence.*;
 
@@ -16,9 +16,9 @@ public class Book {
     @Column(nullable = false)
     private String author;
 
-    Book() {}
+    public Book() {}
 
-    Book(String title , String author) {
+    public Book(String title , String author) {
         this.title = title;
         this.author = author;
     }

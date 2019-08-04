@@ -1,4 +1,4 @@
-package com.stackdriverpoc;
+package com.stackdriverpoc.ErrorHandling;
 
 public class BookNotFoundException extends RuntimeException {
     public BookNotFoundException(Long id) {

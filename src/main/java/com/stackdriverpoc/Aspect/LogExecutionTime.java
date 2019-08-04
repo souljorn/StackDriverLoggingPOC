@@ -1,4 +1,4 @@
-package com.stackdriverpoc.Controller.Aspect;
+package com.stackdriverpoc.Aspect;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -25,8 +25,8 @@ Using generated security password: 4ef18b7b-3d87-487e-b157-9ef57a31b7df
 2019-07-04 05:44:35.084  WARN 2888 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 05:44:35.250  INFO 2888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 05:44:35.252  INFO 2888 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 2.871 seconds (JVM running for 3.304)
-2019-07-04 05:44:35.293  INFO 2888 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 05:44:35.294  INFO 2888 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:44:35.293  INFO 2888 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:44:35.294  INFO 2888 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 05:49:00.388  INFO 2888 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-07-04 05:49:00.389  INFO 2888 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-07-04 05:49:00.390  INFO 2888 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
@@ -155,8 +155,8 @@ Using generated security password: e77fe20b-d81b-4607-b5c8-7325f4825e44
 2019-07-04 05:50:31.284  WARN 3061 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 05:50:31.479  INFO 3061 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 05:50:31.482  INFO 3061 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.082 seconds (JVM running for 3.487)
-2019-07-04 05:50:31.520  INFO 3061 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 05:50:31.521  INFO 3061 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:50:31.520  INFO 3061 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:50:31.521  INFO 3061 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 05:53:20.110  INFO 3061 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-07-04 05:53:20.111  INFO 3061 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2019-07-04 05:53:20.111  INFO 3061 --- [Thread-4] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
@@ -189,8 +189,8 @@ Using generated security password: 91962091-00c7-4aac-beb8-f6f2c10d71d0
 2019-07-04 05:53:42.883  WARN 3075 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 05:53:43.068  INFO 3075 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 05:53:43.074  INFO 3075 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.039 seconds (JVM running for 3.456)
-2019-07-04 05:53:43.112  WARN 3075 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 05:53:43.114 ERROR 3075 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:53:43.112  WARN 3075 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:53:43.114 ERROR 3075 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 05:55:01.001  INFO 3075 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 05:55:01.002  INFO 3075 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 05:55:01.008  INFO 3075 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
@@ -227,8 +227,8 @@ Using generated security password: 506e2992-137a-4d03-95f0-a718955baac9
 2019-07-04 05:55:58.542  WARN 3083 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 05:55:58.732  INFO 3083 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 05:55:58.735  INFO 3083 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.082 seconds (JVM running for 3.478)
-2019-07-04 05:55:58.774  WARN 3083 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 05:55:58.775 ERROR 3083 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:55:58.774  WARN 3083 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:55:58.775 ERROR 3083 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 05:56:06.265  INFO 3083 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 05:56:06.267  INFO 3083 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 05:56:06.274  INFO 3083 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
@@ -265,8 +265,8 @@ Using generated security password: 3ed1bf8a-4875-4780-869d-2591acd8ff98
 2019-07-04 05:56:40.934  WARN 3092 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 05:56:41.121  INFO 3092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 05:56:41.124  INFO 3092 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.746 seconds (JVM running for 4.744)
-2019-07-04 05:56:41.169  WARN 3092 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 05:56:41.170 ERROR 3092 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 05:56:41.169  WARN 3092 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 05:56:41.170 ERROR 3092 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 05:56:44.523  INFO 3092 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 05:56:44.523  INFO 3092 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 05:56:44.529  INFO 3092 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
@@ -309,8 +309,8 @@ Using generated security password: 36a6e38e-19a1-4e07-88a5-5572acaf2692
 2019-07-04 06:00:24.429  WARN 3105 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:00:24.639  INFO 3105 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:00:24.642  INFO 3105 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.12 seconds (JVM running for 3.591)
-2019-07-04 06:00:24.681  WARN 3105 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:00:24.682 ERROR 3105 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:00:24.681  WARN 3105 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:00:24.682 ERROR 3105 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:00:26.965  INFO 3105 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:00:26.965  INFO 3105 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:00:26.971  INFO 3105 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
@@ -347,8 +347,8 @@ Using generated security password: fa2106cd-ecf8-42df-b956-d3849f1b5ef5
 2019-07-04 06:01:55.039  WARN 3113 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:01:55.223  INFO 3113 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:01:55.225  INFO 3113 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 2.865 seconds (JVM running for 3.26)
-2019-07-04 06:01:55.264  WARN 3113 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:01:55.265 ERROR 3113 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:01:55.264  WARN 3113 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:01:55.265 ERROR 3113 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:01:58.774  INFO 3113 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:01:58.775  INFO 3113 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:01:58.780  INFO 3113 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
@@ -385,8 +385,8 @@ Using generated security password: 7719fa84-45ce-4dab-8738-7c35e707bfe2
 2019-07-04 06:05:51.603  WARN 3132 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:05:51.819  INFO 3132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:05:51.822  INFO 3132 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.081 seconds (JVM running for 3.507)
-2019-07-04 06:05:51.866  WARN 3132 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:05:51.868 ERROR 3132 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:05:51.866  WARN 3132 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:05:51.868 ERROR 3132 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:06:02.101  INFO 3132 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:06:02.102  INFO 3132 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:06:02.107  INFO 3132 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
@@ -423,8 +423,8 @@ Using generated security password: 4bd3ad76-d6a6-4b3e-a308-e3ef57f1dc99
 2019-07-04 06:06:13.399  WARN 3138 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:06:13.590  INFO 3138 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:06:13.592  INFO 3138 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.199 seconds (JVM running for 3.604)
-2019-07-04 06:06:13.631  WARN 3138 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:06:13.633 ERROR 3138 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:06:13.631  WARN 3138 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:06:13.633 ERROR 3138 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:06:18.988  INFO 3138 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:06:18.989  INFO 3138 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:06:18.994  INFO 3138 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
@@ -464,8 +464,8 @@ Using generated security password: 6c0d095f-781f-464e-b38f-f887ee097a80
 2019-07-04 06:06:32.115  WARN 3141 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:06:32.308  INFO 3141 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:06:32.310  INFO 3141 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.739 seconds (JVM running for 4.548)
-2019-07-04 06:06:32.357  WARN 3141 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:06:32.359 ERROR 3141 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:06:32.357  WARN 3141 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:06:32.359 ERROR 3141 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:06:34.244  INFO 3141 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:06:34.244  INFO 3141 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:06:34.252  INFO 3141 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
@@ -503,8 +503,8 @@ Using generated security password: 54bfda41-d9ef-446b-ae02-797fae933c51
 2019-07-04 06:07:46.169  WARN 3147 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:07:46.360  INFO 3147 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:07:46.362  INFO 3147 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.368 seconds (JVM running for 3.947)
-2019-07-04 06:07:46.430  WARN 3147 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:07:46.432 ERROR 3147 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:07:46.430  WARN 3147 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:07:46.432 ERROR 3147 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:07:49.953  INFO 3147 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:07:49.953  INFO 3147 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:07:49.959  INFO 3147 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
@@ -541,8 +541,8 @@ Using generated security password: 8af4c984-503b-4d30-bb9d-d09dfd45067f
 2019-07-04 06:08:57.064  WARN 3153 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:08:57.277  INFO 3153 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:08:57.280  INFO 3153 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 3.084 seconds (JVM running for 3.498)
-2019-07-04 06:08:57.322  WARN 3153 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:08:57.323 ERROR 3153 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:08:57.322  WARN 3153 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:08:57.323 ERROR 3153 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:09:04.896  INFO 3153 --- [http-nio-9999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:09:04.906  INFO 3153 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:09:04.914  INFO 3153 --- [http-nio-9999-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
@@ -581,8 +581,8 @@ Using generated security password: 7a1c677d-eefc-426d-97bd-c66f251d657e
 2019-07-04 06:10:17.410  WARN 3160 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-07-04 06:10:17.577  INFO 3160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9999 (http) with context path ''
 2019-07-04 06:10:17.579  INFO 3160 --- [main] c.stackdriverpoc.StackdriverApplication  : Started StackdriverApplication in 2.849 seconds (JVM running for 3.252)
-2019-07-04 06:10:17.617  WARN 3160 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
-2019-07-04 06:10:17.618 ERROR 3160 --- [main] com.stackdriverpoc.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
+2019-07-04 06:10:17.617  WARN 3160 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=1, title=Bilbo Baggins, author=burglar)
+2019-07-04 06:10:17.618 ERROR 3160 --- [main] com.stackdriverpoc.Database.LoadDatabase          : Preloading Book(id=2, title=Frodo Baggins, author=thief)
 2019-07-04 06:10:20.522  INFO 3160 --- [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-04 06:10:20.522  INFO 3160 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-07-04 06:10:20.527  INFO 3160 --- [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
